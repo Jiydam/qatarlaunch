@@ -1,0 +1,82 @@
+/* Put your custom css here */
+
+.countdown-block {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.countdown-block div {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-block;
+    padding: 0 10px;
+    color: #999;
+    border-left: dashed 1px #fff;
+}
+
+.countdown-block div:first-child {
+    border-left: none;
+}
+
+.countdown-block div span {
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+}
+
+.btn-border-dark {
+    background: none;
+    border: 1px solid #999;
+    color: #999;
+}
+
+.myShadow {
+   box-shadow: 10px 10px 5px #888888;
+}
+
+.pt50 {
+	padding-top: 50px;
+}
+.pt60 {
+	padding-top: 60px;
+}
+.pt150{
+	padding-top: 150px;
+}
+.pb150{
+	padding-bottom: 150px;
+}
+
+.iconRounded1 {
+  color: #242C53;
+  border: 1px solid #242C53;
+}
+
+.iconBig.iconRounded1 {
+  width: 100px;
+  height: 100px;
+}
+.iconBig.iconRounded1:before {
+  line-height: 100px;
+}
+.iconRounded1:before, [class*=" icon-"].iconRounded1:before {
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 0;
+}
+
+.img-rounded {
+  width: 140px;
+  height: 140px;
+}
+
+.form-group{
+margin-bottom:30px;
+}
+
+label{
+  margin-bottom:15px;
+}

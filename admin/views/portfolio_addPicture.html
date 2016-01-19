@@ -1,0 +1,70 @@
+<style type="text/css">
+.myform-group {
+    margin-bottom: 15px;
+}
+
+.file-name-box {
+    padding-bottom: 30px;
+}
+
+.file-names {
+    line-height: 12px;
+}
+
+.bg-info {
+    padding: 10px;
+}
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"> Add picture(s) to your portfilio</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-camera-retro fa-fw"></i> Picture Upload
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div>
+                    <button type="file" ng-file-select="onDocumentSelect($files)" title="select file" multiple onclick="this.value = null" class="btn btn-block btn-primary btn-lg upload-button">Select Picture(s) for upload</button>
+                </div>
+                <section ng-show="uploading" class="file-name-box">
+                    <h2>Uploading your image(s)</h2>
+                    <article>
+                        <div ng-repeat="image in selectedFiles">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="file-names">{{image.name}}</p>
+                                    
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width:2em; width: {{image.progress}}%;">
+                                            {{image.progress}}%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!--<h2><i class="fa fa-spinner fa-pulse fa-fw"></i> Uploading please wait ...</h2>-->
+                </section>
+                <section>
+                    <hr>
+                    <h2>Notes on uploading images</h2>
+                    <p class="bg-info">You can upload any size of image so long as each side is greater than 700 pixels.</p>
+                    <p class="bg-info">If you upload an image where has any side is greater than 1200 pixels, it will be scaled back down to 1200 pixels with the aspect ratio maintained.</p>
+                    <p class="bg-info">You can upload more than one image at a time.</p>
+                    <p class="bg-info">You can only upload .jpg files.</p>
+                </section>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!--/.thumbnail -->
+    </div>
+</div>
+<!-- /.row -->

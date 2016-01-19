@@ -1,0 +1,85 @@
+<style type="text/css">
+dd {
+    color: #999;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+.desc {
+    //min-height: 130px;
+}
+
+.myfooter {
+    cursor: pointer;
+    color: #1E90FF;
+}
+
+.myfooter:hover {
+    color: #999;
+}
+
+.desc:focus {
+    outline: 0px solid transparent;
+}
+.picture-heading{
+    margin-bottom:0px;
+    font-size:18px;
+    font-weight: 200;
+    line-height: 15px;
+}
+.picture-title{
+    font-size: 13px;
+    color: #999;
+    margin-bottom:0px;
+}
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"> Portfolio Admin
+                 <span><div class="pull-right">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Actions
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+
+                        <li><a ui-sref="portfolioAddPicture" href="#">Add Picture(s)</a>
+
+                        <!--<li class="divider"></li>-->
+                     
+                    </ul>
+                </div>
+            </div></span>
+        </h1>
+    </div>
+    <!-- /.col-lg-12 -->
+    <div ng-repeat="picture in pictures">
+        <div class="col-md-4 ">
+            <div class="panel panel-default">
+                <!--<div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-sitemap fa-fw"></i> {{picture.filename}}</h3>
+                </div>-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <img ng-src="/images/portfolio/{{picture.filename}}" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <p class="picture-heading">Picture Title <span><i class="fa fa-trash fa-fw pull-right"></i><i class="fa fa-pencil fa-fw pull-right"></i></span></p>
+                    <p class="picture-title">Ancient contemplation</p>
+                </div>
+                <!-- /.panel-body -->
+                <!--<div ng-click="onClick_getProject(project)" class="panel-footer myfooter">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>-->
+                <!-- /.panel -->
+            </div>
+            <!-- ./col-md -->
+        </div>
+        <!-- ./ng-repeat-->
