@@ -1401,7 +1401,7 @@ function initialize(id) {
 
     var locations = [
         //point number 1
-        ['Marriott City Center', 'Doha, Qatar',25.325247,51.527797]
+        ['Grand Hyatt', 'Doha, Qatar',25.377143, 51.528100]
 
      
     ];
