@@ -67,7 +67,7 @@ $(document).ready(function() {
     "use strict";
 
 
-    $('#clock').countdown('2015/12/01', function(event) {
+    $('#clock').countdown('2016/04/25', function(event) {
         var $this = $(this).html(event.strftime('' + '<div>%D<span>days</span></div>' + '<div>%H<span>hours</span></div>' + '<div>%M<span>minutes</span></div>' + '<div>%S<span>seconds</span></div>'));
     });
 
@@ -1403,7 +1403,7 @@ function initialize(id) {
 
     var locations = [
         //point number 1
-        ['Marriott, City Center', 'Doha, Qatar',25.325247,51.527797]
+        ['Grand Hyatt Doha', 'Doha, Qatar',25.377143, 51.528100]
 
      
     ];
