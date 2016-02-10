@@ -224,6 +224,9 @@ pre code {
 /*** MEDIA QUERIES ***/
 
 @media(max-width:767px) {
+	.image-6 {
+	background-image: url('../images/theme-pics/parallax-11.jpg');
+}
 }
 
 @media(min-width:1025px) {
@@ -1092,8 +1095,12 @@ a.btnRight {
 }
 /*** MEDIA QUERIES ***/
 @media(max-width:767px) {
+	.image-6 {
+	background-image: url('../images/theme-pics/parallax-11.jpg');
+}
 }
 @media(min-width:768px) {
+	
 }
 @media(min-width:992px) {
 }
