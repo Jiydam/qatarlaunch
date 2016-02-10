@@ -67,7 +67,7 @@ $(document).ready(function() {
     "use strict";
 
 
-    $('#clock').countdown('2016/04/25', function(event) {
+    $('#clock').countdown('2016/04/26', function(event) {
         var $this = $(this).html(event.strftime('' + '<div>%D<span>days</span></div>' + '<div>%H<span>hours</span></div>' + '<div>%M<span>minutes</span></div>' + '<div>%S<span>seconds</span></div>'));
     });
 
